@@ -1,4 +1,4 @@
-Microsoft (R) Macro Assembler Version 14.29.30133.0	    09/24/21 14:03:21
+Microsoft (R) Macro Assembler Version 14.29.30133.0	    09/24/21 14:12:09
 AddTwo.asm						     Page 1 - 1
 
 
@@ -40,7 +40,7 @@ c:\Irvine\SmallWin.inc(11) : warning A4011:multiple .MODEL directives found : .M
  00000000			.code
  00000000			main proc
  00000000  B8 000000F1			mov	eax, blue + (white * 16) ;
- 00000005  B9 00000011			mov ecx, 17
+ 00000005  B9 00000004			mov ecx, 4
 
  0000000A  E8 00000000 E		L1: call SetTextColor
 
@@ -49,7 +49,7 @@ c:\Irvine\SmallWin.inc(11) : warning A4011:multiple .MODEL directives found : .M
 
  00000019  E8 00000000 E		call Crlf
 
- 0000001E  83 C0 01			add eax, 1
+ 0000001E  83 C0 02			add eax, 2
 
  00000021  E2 E7			loop L1			
 
@@ -58,7 +58,7 @@ c:\Irvine\SmallWin.inc(11) : warning A4011:multiple .MODEL directives found : .M
  00000025  E8 00000000 E   *	    call   ExitProcess
  0000002A			main endp
 				end main
-Microsoft (R) Macro Assembler Version 14.29.30133.0	    09/24/21 14:03:21
+Microsoft (R) Macro Assembler Version 14.29.30133.0	    09/24/21 14:12:09
 AddTwo.asm						     Symbols 2 - 1
 
 

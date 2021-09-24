@@ -15,7 +15,7 @@ str1 BYTE "hello world", 0
 .code
 main proc
 	mov	eax, blue + (white * 16) ;
-	mov ecx, 17
+	mov ecx, 4
 
 	L1: call SetTextColor
 
@@ -24,7 +24,7 @@ main proc
 
 	call Crlf
 
-	add eax, 1
+	add eax, 2
 
 	loop L1			
 
